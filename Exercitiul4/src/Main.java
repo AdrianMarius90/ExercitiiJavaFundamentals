@@ -15,7 +15,7 @@ public class Main {
     public static int numaraCuvinte(String text){
 
         int numarCuvinte = 0;
-        String[] cuvinte = text.split( regex: "");
+        String[] cuvinte = text.split( regex: " ");
 
         for(int cursor = 0; cursor < cuvinte.length; cursor ){
             if(cuvinte[cursor].length() > 2 && cuvinte[cursor].contains("i") && cuvinte[cursor].indexOf("i") % 2 == 0){
